@@ -41,9 +41,7 @@ jinja2==3.0.3 \
 license-expression==21.6.14 \
     --hash=sha256:324246eed8e138b4139fefdc0e9dc4161d5075e3929e56983966d37298dca30e \
     --hash=sha256:9de87a427c9a449eee7913472fb9ed03b63036295547369fdbf95f76a8b924b2
-    # via
-    #   -r reuse-requirements.in
-    #   reuse
+    # via reuse
 markupsafe==2.0.1 \
     --hash=sha256:01a9b8ea66f1658938f65b93a85ebe8bc016e6769611be228d797c9d998dd298 \
     --hash=sha256:023cb26ec21ece8dc3907c0e8320058b2e0cb3c55cf9564da612bc325bed5e64 \
@@ -131,9 +129,9 @@ reuse==1.0.0 \
     --hash=sha256:db3022be2d87f69c8f508b928023de3026f454ce17d01e22f770f7147ac1e8d4 \
     --hash=sha256:e2605e796311c424465d741ea2a1e1ad03bbb90b921d74750119c331ca5af46e
     # via -r reuse-requirements.in
-urllib3==1.26.10 \
-    --hash=sha256:8298d6d56d39be0e3bc13c1c97d133f9b45d797169a0e11cdd0e0489d786f7ec \
-    --hash=sha256:879ba4d1e89654d9769ce13121e0f94310ea32e8d2f8cf587b77c08bbcdb30d6
+urllib3==1.26.18 \
+    --hash=sha256:34b97092d7e0a3a8cf7cd10e386f401b3737364026c45e622aa02903dffe0f07 \
+    --hash=sha256:f8ecc1bba5667413457c529ab955bf8c67b45db799d159066261719e328580a0
     # via requests
 
 # The following packages are considered to be unsafe in a requirements file:
