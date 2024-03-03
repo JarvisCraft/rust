@@ -802,8 +802,6 @@ macro_rules! nonzero_integer_signedness_dependent_impls {
 
         #[stable(feature = "nonzero_div_assign", since = "CURRENT_RUSTC_VERSION")]
         impl DivAssign<$Ty> for $Int {
-            /// This operation rounds towards zero,
-            /// truncating any fractional part of the exact result, and cannot panic.
             #[inline]
             fn div_assign(&mut self, other: $Ty) {
                 *self = *self / other;
@@ -825,7 +823,6 @@ macro_rules! nonzero_integer_signedness_dependent_impls {
 
         #[stable(feature = "nonzero_div_assign", since = "CURRENT_RUSTC_VERSION")]
         impl RemAssign<$Ty> for $Int {
-            /// This operation satisfies `n % d == n - (n / d) * d`, and cannot panic.
             #[inline]
             fn rem_assign(&mut self, other: $Ty) {
                 *self = *self % other;
